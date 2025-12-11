@@ -434,6 +434,8 @@ class ProjectDetail extends Component {
               href={project.live}
               target="_blank"
               className="button action-button"
+              rel="noreferrer"
+
             >
               Live Demo <FaExternalLinkAlt />
             </a>
@@ -443,6 +445,7 @@ class ProjectDetail extends Component {
             href={project.github}
             target="_blank"
             className="button action-button"
+            rel="noreferrer"
           >
             GitHub <FaGithub />
           </a>

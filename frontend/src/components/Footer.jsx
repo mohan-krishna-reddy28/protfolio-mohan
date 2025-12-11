@@ -32,6 +32,7 @@ const Footer = () => {
               href="https://github.com/mohan-krishna-reddy28"
               target="_blank"
               className="footer-icon"
+              rel="noreferrer"
             >
               <FaGithub size={26} />
             </a>
@@ -39,6 +40,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               className="footer-icon"
+              rel="noreferrer"
             >
               <FaLinkedin size={26} />
             </a>

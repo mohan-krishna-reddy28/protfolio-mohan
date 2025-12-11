@@ -98,7 +98,11 @@ class Home extends Component {
                 </button>
               </div>
 
-              <iframe src="/my-resume.pdf" className="popup-pdf"></iframe>
+              <iframe
+                src="/my-resume.pdf"
+                className="popup-pdf"
+                title="resume-preview"
+              ></iframe>
             </div>
           )}
         </Popup>
