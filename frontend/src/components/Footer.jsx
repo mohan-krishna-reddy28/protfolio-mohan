@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="text-white pt-1 pb-3 mt-5 fixed-bottom"
+      className="text-white pt-1 pb-3 mt-5"
       style={{
         background: "rgba(28, 27, 27, 0.8)",
         borderTop: "1px solid #706e6eff",
