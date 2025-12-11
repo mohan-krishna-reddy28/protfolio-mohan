@@ -8,7 +8,16 @@ const Contact = require("./models/Contacts");
 const Project = require("./models/Project");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://portfolio-mohan03.netlify.app",
+      "http://localhost:3000"
+    ],
+    methods: ["GET", "POST"],
+  })
+);
+
 app.use(express.json());
 
 // --------------------------
