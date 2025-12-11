@@ -318,7 +318,9 @@ class ProjectDetail extends Component {
     const { id } = this.props.params;
 
     try {
-      const res = await fetch(`https://portfolio-mohan03.netlify.app/projects/${id}`);
+      const res = await fetch(
+        `https://protfolio-mohan.vercel.app/projects/${id}`
+      );
       const data = await res.json();
 
       if (data.success) {
@@ -336,10 +338,20 @@ class ProjectDetail extends Component {
     const { project, loading } = this.state;
 
     if (loading)
-      return <h2 className="text-white text-center mt-5 pt-5">Loading...</h2>;
+      return (
+        <div className="page-up-margin">
+          <h2 className="text-white text-center mt-5 pt-5">Loading...</h2>;
+        </div>
+      );
 
     if (!project)
-      return <h2 className="text-white text-center mt-5 pt-5">Project Not Found</h2>;
+      return (
+        <div className="page-up-margin">
+          <h2 className="text-white text-center mt-5 pt-5">
+            Project Not Found
+          </h2>
+        </div>
+      );
 
     return (
       <motion.div
@@ -435,7 +447,6 @@ class ProjectDetail extends Component {
               target="_blank"
               className="button action-button"
               rel="noreferrer"
-
             >
               Live Demo <FaExternalLinkAlt />
             </a>
