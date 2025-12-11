@@ -46,7 +46,7 @@ coverage/
 # Temporary files
 tmp/
 temp/
-
+README.md~
 # Parcel cache
 .cache/
 .parcel-cache/
