@@ -19,7 +19,7 @@ class Contact extends Component {
     const email = e.target[1].value;
     const message = e.target[2].value;
 
-    const res = await fetch("http://localhost:3000/contact", {
+    const res = await fetch("https://protfolio-mohan.vercel.app/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message }),

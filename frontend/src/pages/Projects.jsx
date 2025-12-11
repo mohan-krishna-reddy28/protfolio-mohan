@@ -12,10 +12,10 @@ export default function Projects() {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("http://localhost:3000/projects");
+        const res = await fetch("https://protfolio-mohan.vercel.app/projects");
         const data = await res.json();
 
-        if (res.ok) {
+        if (res.ok && data.projects) {
           setProjects(data.projects);
         }
       } catch (error) {
@@ -33,10 +33,9 @@ export default function Projects() {
       <h1 className="text-center my-3 theme-color">My Projects</h1>
 
       <div className="d-flex flex-wrap justify-content-center gap-4">
-
         {loading ? (
           <>
-            {[1,2,3,4,5,6].map((n) => (
+            {[1, 2, 3, 4, 5, 6].map((n) => (
               <SkeletonTheme
                 key={n}
                 baseColor="#1f1f1f"
@@ -57,7 +56,6 @@ export default function Projects() {
             />
           ))
         )}
-
       </div>
     </div>
   );

@@ -77,6 +77,14 @@ app.get("/projects/:id", async (req, res) => {
   }
 });
 
+// for versel to check it is live
+app.get("/", (req, res) => {
+  res.send("Portfolio Backend is Live");
+});
+app.get("/contact", (req, res) => {
+  res.send("Contact POST endpoint is active");
+});
+
 
 mongoose
   .connect(process.env.MONGO_URI)
