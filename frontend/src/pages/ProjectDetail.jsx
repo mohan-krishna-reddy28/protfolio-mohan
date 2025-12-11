@@ -318,7 +318,7 @@ class ProjectDetail extends Component {
     const { id } = this.props.params;
 
     try {
-      const res = await fetch(`http://localhost:3000/projects/${id}`);
+      const res = await fetch(`https://portfolio-mohan03.netlify.app/projects/${id}`);
       const data = await res.json();
 
       if (data.success) {
@@ -336,14 +336,14 @@ class ProjectDetail extends Component {
     const { project, loading } = this.state;
 
     if (loading)
-      return <h2 className="text-white text-center mt-5">Loading...</h2>;
+      return <h2 className="text-white text-center mt-5 pt-5">Loading...</h2>;
 
     if (!project)
-      return <h2 className="text-white text-center mt-5">Project Not Found</h2>;
+      return <h2 className="text-white text-center mt-5 pt-5">Project Not Found</h2>;
 
     return (
       <motion.div
-        className="text-white mt-5 p-4 pt-5 mx-md-5 p-md-5"
+        className="text-white page-up-margin mt-5 p-4 pt-5 mx-md-5 p-md-5"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
       >
