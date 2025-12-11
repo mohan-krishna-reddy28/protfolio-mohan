@@ -83,7 +83,6 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
-const PORT = process.env.PORT || 3000;
 
 module.exports = app;
 
