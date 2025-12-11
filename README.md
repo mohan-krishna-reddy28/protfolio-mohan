@@ -3,14 +3,6 @@
 This portfolio website showcases my projects, skills, certifications, education, and experience.  
 It is built using **React.js** with smooth animations, responsive layouts, and dynamic content loading from a backend API.
 
-The portfolio includes major projects such as:
-- Jobby App  
-- Insta Share App  
-- Nxt Watch App  
-- Sleep Disorder Detection System  
-- Certificates & Achievements  
-- Contact Section  
-
 ---
 
 ## 🌐 Live Demo
@@ -27,8 +19,9 @@ https://mohan-portfolio.onrender.com/
 - Framer Motion  
 - Bootstrap  
 - Custom CSS  
-- REST API Integration  
-- MongoDB (project & certificate data)
+- REST API Integration
+- Node JS
+- MongoDB (project data)
 
 ---
 
